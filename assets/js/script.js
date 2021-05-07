@@ -33,7 +33,7 @@ async function vaccinate() {
         for (s in a.centers[c].sessions) {
           if (
             a.centers[c].sessions[s].min_age_limit < 45 &&
-            a.centers[c].sessions[s].available_capacity >0
+            a.centers[c].sessions[s].available_capacity > 0
           ) {
             document.getElementById("temp").innerHTML = "<p>Location Found</p>";
             console.log(
@@ -62,20 +62,22 @@ async function vaccinate() {
 
 function run() {
   var pinString = document.getElementById("pincode").value;
-  var dateString = document.getElementById("dateOfBooking").value;
-  var today = new Date();
-  var month = today.getMonth();
-  var day = today.getDay();
-  var year = today.getFullYear();
+//   var dateString = document.getElementById("dateOfBooking").value;
+//   var today = new Date();
+//   var month = today.getMonth();
+//   var day = today.getDay();
+//   var year = today.getFullYear();
+//   var todayString =
+//     day.toString() + "-" + month.toString() + "-" + year.toString();
+//   var date = new Date(todayString);
 
-  var date = new Date(year, month, day);
-
-  mydate = new Date(dateString);
-  console.log(date);
-  console.log(mydate);
-  if (mydate < date) {
-    alert("Please enter a valid date!");
-  } else if (
+//   mydate = new Date(dateString);
+//   console.log(date);
+//   console.log(pinString);
+//   if (mydate < date) {
+//     alert("Please enter a valid date!");
+//   } else 
+if (
     pinString.length != 6 &&
     /^(\d{4}|\d{6})$/.test(pinString) == false
   ) {
