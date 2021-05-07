@@ -33,7 +33,7 @@ async function vaccinate() {
         for (s in a.centers[c].sessions) {
           if (
             a.centers[c].sessions[s].min_age_limit < 45 &&
-            a.centers[c].sessions[s].available_capacity === 0
+            a.centers[c].sessions[s].available_capacity >0
           ) {
             document.getElementById("temp").innerHTML = "<p>Location Found</p>";
             console.log(
