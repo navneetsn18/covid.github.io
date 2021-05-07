@@ -64,7 +64,7 @@ function run() {
   var pinString = document.getElementById("pincode").value;
   var dateString = document.getElementById("dateOfBooking").value;
   var today = new Date();
-  var month = today.getMonth() + 1;
+  var month = today.getMonth();
   var day = today.getDay();
   var year = today.getFullYear();
 
