@@ -27,7 +27,7 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="fname">Pincode</label>
-                <input type="text" class="form-control" id="pincode">
+                <input type="text" class="form-control" id="pincode" value="110059">
             </div>
             <div class="form-group col-md-3">
                 <label for="date">Date</label>
@@ -51,6 +51,17 @@
             uiLibrary: 'bootstrap4',
             format: 'dd-mm-yyyy'
         });
+        $('#dateOfBooking').ready( function() {
+    var now = new Date();
+    var month = (now.getMonth() + 1);               
+    var day = now.getDate()+1;
+    if (month < 10) 
+        month = "0" + month;
+    if (day < 10) 
+        day = "0" + day;
+    var today = day + '-' + month + '-' + now.getFullYear();
+    $('#dateOfBooking').val(today);
+});
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
