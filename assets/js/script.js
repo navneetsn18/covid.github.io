@@ -18,7 +18,7 @@ async function vaccinate() {
   for (i = 0; i < pincodes.length; i++) {
     for (j = 0; j < dateArr.length; j++) {
       url =
-        "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByPin?pincode=" +
+        "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=" +
         pincodes[i] +
         "&date=" +
         dateArr[j];
