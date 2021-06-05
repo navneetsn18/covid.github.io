@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <Response>
   <Say voice="alice">There is some slots found for 11009.Please book your appointment immediatly.</Say>
 <Pause length="1"/>
